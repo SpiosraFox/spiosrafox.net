@@ -1,0 +1,138 @@
+html {
+    color: #E5C5A4;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #110D09;
+    margin: 0 auto;
+    text-align: center;
+    width: 40em;
+}
+
+header {
+    border-bottom: 2px solid #727272;
+    border-top: 2px solid #727272;
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+    header h1 {
+        margin: 0;
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
+
+nav { 
+    animation: appear .5s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    font-size: 1.5em;
+    list-style-type: none;
+    opacity: 0;
+}
+
+    nav ul { padding: 0; }
+
+    nav li { display: inline-block; }
+
+.description {
+    font-size: 1.3em;
+}
+
+.object-list {
+    animation: slide-load .6s;
+    border: 2px solid #727272;
+    display: table;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 1em 2em;
+    width: 35em;
+}
+
+    .object-list li { display: table-row; }
+
+.vl + .object-list {
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.object-name {
+    display: table-cell;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: .3em;
+    padding-right: 4%;
+    text-align: right;
+    width: 50%;
+}
+
+.object-value {
+    display: table-cell;
+    font-size: 1.3em;
+    padding: .3em;
+    padding-left: 4%;
+    text-align: left;
+    transition: color .3s ease;
+    width: 50%;
+}
+
+a {
+    color: #5E966C;
+    transition: color .3s ease;
+}
+
+    a:hover { color: #00D990; }
+
+.vl {
+    animation: appear .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-left: 2px solid #727272;
+    height: 75px;
+    margin-left: 20em;
+    opacity: 0;
+    width: 50%;
+}
+
+.palette-color-6a3b01 { background-color: #6A3B01; }
+.palette-color-ffdbb7 { background-color: #FFDBB7; }
+.palette-color-2b241d { background-color: #2B241D; }
+.palette-color-110d09 { background-color: #110D09; }
+.palette-color-6d8f9c { background-color: #6D8F9C; }
+.palette-color-ac727b { background-color: #AC727B; }
+.palette-color-0d3930 { background-color: #0D3930; }
+
+table { 
+    animation: slide-load .6s;
+    margin-top: 4em;
+}
+
+th { vertical-align: middle; }
+
+td {
+    border: 1px solid #DDDDDD;
+    height: 8em;
+    width: 8em;
+}
+
+.character-image {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding: 5px;
+    width: 38em;
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slide-load {
+    from { transform: translateY(-33%); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1;     }
+}
