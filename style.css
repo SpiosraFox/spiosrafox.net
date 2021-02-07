@@ -54,6 +54,8 @@ nav {
 
 .description { font-size: 4.5vw; }
 
+.note { font-size: 1em; }
+
 .object-list {
     animation: slide-load .6s;
     border-bottom: 2px solid #727272;
